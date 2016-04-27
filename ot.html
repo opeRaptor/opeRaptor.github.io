@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Buildlog and notes about Technology and Engineering. @suprnova">
+
+    <title>An opeRaptors lair</title>
+
+<link rel="stylesheet" href="css/layouts/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
+
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu"><img class="pure-img-responsive" src="images/eva.png" alt="Menu Logo">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">home</a></li>
+            <li class="pure-menu-item"><a href="ot.html" class="pure-menu-link">obsolete;time</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+        <div class="pure-u-5-8">
+            <h1><img class="pure-img-responsive" src="images/welcomeot.jpg" alt="HeaderPicture"></h1>
+        </div>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">obsolete;time nixie clock</h2>
+            <p>
+                obsolete;time is a desk clock using Nixie tubes as digital indicator. We are tackling the challenge that is designing and building a product ready for production! 
+                Here are some design choices:
+            </p>
+            <table class="pure-table pure-table-bordered">
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>IN-12 Russian Nixie Tubes </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Minimalistic </td>
+                    </tr>
+            
+                    <tr>
+                        <td>3</td>
+                        <td>Made of Premium materials </td>
+
+                    </tr>
+                     <tr>
+                        <td>4</td>
+                        <td>No buttons petruding</td>
+
+                    </tr>
+                     <tr>
+                        <td>5</td>
+                        <td>Smartphone APP and BLE </td>
+
+                    </tr>
+                </tbody>
+                
+            </table>
+            <h2 class="content-subhead">Prototype build </h2>
+            <div class="pure-g">
+                <div class="pure-u-1-1">
+                    <img class="pure-img-responsive" src="images/protoOT.jpg" alt="cmoy">
+                </div>
+                <div class="pure-u-1-1">
+                    <img class="pure-img-responsive" src="images/ot.jpg" alt="goureu">
+                </div>
+            </div>
+            
+            <h2 class="content-subhead">BOM</h2>
+            <p>
+                    Hardware is made up of multiple sub-systems listed bellow, each in charge of an important function
+            </p>
+            <table class="pure-table pure-table-bordered">
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>ATmega 328 μController </td>
+                        <td>The micro-controller runs tho software controlling the clock</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>DS1307 RTC </td>
+                        <td>The real time clock is in charge of keeping correct time, even when power loss</td>
+                    </tr>
+            
+                    <tr>
+                        <td>3</td>
+                        <td>IN-12 Russian Nixie tubes </td>
+                        <td>Nixie tube indicator manifactured in the 60s</td>
+
+                    </tr>
+                     <tr>
+                        <td>4</td>
+                        <td>Bluetooth module</td>
+                        <td>Wireless gateway to give instructions to the clock</td>
+
+                    </tr>
+                     <tr>
+                        <td>5</td>
+                        <td>High voltage generator </td>
+						<td>Nixie tube require ~170v to operate, as such a separate power supply is needed </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2 class="content-subhead">PCB and layout</h2>
+            <div class="pure-g">
+                <div class="pure-u-1-1">
+                    <img class="pure-img-responsive" src="images/schm.png" alt="cmoy">
+                </div>
+                <div class="pure-u-1-1">
+                    <img class="pure-img-responsive" src="images/pcb.jpg" alt="goureu">
+                </div>
+                 <div class="pure-u-1-1">
+                    <img class="pure-img-responsive" src="images/nixiefit.jpg" alt="goureu">
+                </div>
+            </div>
+            
+            <h2 class="content-subhead">Case </h2>
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/d2KTo8kWl7c" frameborder="0" allowfullscreen></iframe>
+            <div class="pure-g">
+                <div class="pure-u-1-1">
+                    <img class="pure-img-responsive" src="images/cases.jpg" alt="cmoy">
+                </div>
+                <div class="pure-u-1-1">
+                    <img class="pure-img-responsive" src="images/render.png" alt="goureu">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script src="js/ui.js"></script>
+
+</body>
+</html>
