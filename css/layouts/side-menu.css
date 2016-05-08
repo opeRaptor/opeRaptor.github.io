@@ -87,7 +87,7 @@ appears on the left side of the page.
     background: #00324F;	/* Menu color*/
 	margin-left: -150px; /* #menu" width */
 	font-family: 'VT323', sans-serif;
-    width: 200px;
+    width: 150px;
     position: fixed;
     top: 0;
     left: 0;
@@ -101,7 +101,7 @@ appears on the left side of the page.
     */
     #menu a {
         /* color: #999; menu font color */
-		font-size: 150%;
+		font-size: 140%;
         border: none;
         padding: 0.6em 0 0.6em 0.6em;
     }
