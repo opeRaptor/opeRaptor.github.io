@@ -1,6 +1,6 @@
 body {
-    color: #73899E;
-	background: #002940;
+    color: #00B436; /*font color*/
+	background: #0C1414; /*main color*/
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -68,6 +68,14 @@ The content `<div>` is where all your content goes.
         margin-top: 0;
     }
 
+.content-head {
+	font-family: 'VT323', sans-serif;
+	font-size: 300%;
+    margin: 50px 0 20px 0;
+    font-weight: 300;
+    /*color: #888;*/
+}
+
 .content-subhead {
 	font-family: 'VT323', sans-serif;
 	font-size: 200%;
@@ -84,7 +92,7 @@ appears on the left side of the page.
 */
 
 #menu {
-    background: #00324F;	/* Menu color*/
+    background: #142126;	/* Menu color*/
 	margin-left: -150px; /* #menu" width */
 	font-family: 'VT323', sans-serif;
     width: 150px;
@@ -100,7 +108,7 @@ appears on the left side of the page.
     All anchors inside the menu should be styled like this.
     */
     #menu a {
-        /* color: #999; menu font color */
+        color: #00B436; /*menu font color */
 		font-size: 140%;
         border: none;
         padding: 0.6em 0 0.6em 0.6em;
@@ -127,7 +135,7 @@ appears on the left side of the page.
         */
         #menu .pure-menu li a:hover,
         #menu .pure-menu li a:focus {
-            background: #333;
+            background: #242E26; /*selet button color*/
         }
 
     /*
